@@ -55,7 +55,7 @@ def estimativa_pib():
 def plotar_grafico(pais):
     paises, dados, anos = extrair_dados('Assessment_PIBs - modelo 2.csv')
     listar_pibs = []
-    indice = pais.index(pais)
+    indice = paises.index(pais)
     for i in range(8):
         listar_pibs.append(float(dados[i][indice]))
     plt.title(pais)

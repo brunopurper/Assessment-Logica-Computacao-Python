@@ -1,8 +1,8 @@
 import matplotlib.pyplot as plt
 
-valor_inicial = float(input("Digite o valor inicial: "))
-rendimento = float(input("Digite o rendimento mensal em %: "))
-aporte_mensal = float(input("Digite o aporte mensal: "))
+valor_inicial = float(input("Digite o valor inicial em R$: "))
+rendimento = float(input("Digite o rendimento mensal em (%): "))
+aporte_mensal = float(input("Digite o aporte mensal R$: "))
 total_meses = int(input("Digite a quantidade de meses: "))
 
 print(f"Valor inicial: R${valor_inicial}")
@@ -31,6 +31,8 @@ def rendimento_total(valor_inicial, rendimento, aporte_mensal, total_meses):
 
     x = montante_meses
     y = valor_acumulado
+    plt.xlabel("Meses")
+    plt.ylabel("Valor")
     plt.plot(x,y)
     plt.show()
 
